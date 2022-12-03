@@ -1,0 +1,185 @@
+/*This is my 201 Contact Web Page Project using Eric Meyer's reset at the top of my page -- your CSS starts on line 56 */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------- This is the beginning of my 201 Contact Web Page Project ------------ */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url("images/JapanTemple.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+}
+
+.center {
+    width: 800px; /* ------- This is for responsiveness --------- */
+	padding: 2%;
+    margin: 100px auto;
+ 	background: rgba(210, 18, 18, 0.542); /*this uses opacity of 75% for the background color*/
+	text-align: center;
+	border: 0px;
+
+	/* This is my fade in code */
+	animation: fadeIn 5s;
+	-webkit-animation: fadeIn 5s;
+	-moz-animation: fadeIn 5s;
+	-o-animation: fadeIn 5s;
+	-ms-animation: fadeIn 5s;
+}
+
+	@keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1}
+	}
+
+	@-moz-keyframes fadeIn {
+	0% {opacity: 0}
+	100% { opacity: 1}
+	}
+
+	@-webkit-keyframes fadeIn {
+	0% {opacity: 0}
+	100% {opacity: 1}
+	}
+
+	@-o-keyframes fadeIn {
+	0% {opacity: 0}
+	100% {opacity: 1}
+	}
+
+	@-ms-keyframes fadeIn {
+	0% {opacity: 0}
+	100% {opacity: 1}
+	}
+	/* ---------- This is the end of my fade in code ----------- */
+
+#logo {
+    margin-bottom: 16px;
+	margin-top: 80px;
+	width: 200 px
+	border 0px;
+	text-align: center;
+}
+
+h1 {
+	/*<link rel="stylesheet" href="https://use.typekit.net/fyj0lqc.css">*/
+	font-family: 'gardez', sans-serif;
+	font-size: 2em;
+	font-weight: 800;
+	font-style: italic;
+    margin: 0px auto 10px auto;
+    color: rgb(255, 238, 131); /* Color Change */
+}
+
+h2 {
+	/*<link rel="stylesheet" href="https://use.typekit.net/fyj0lqc.css">*/
+	font-family: 'gardez', sans-serif;
+	font-size: 1.8em;
+	font-weight: 800;
+	font-style: italic;
+    line-height: 1.4;
+    color: rgb(255, 238, 131);
+    padding: 0px 0px;
+    margin: 0px auto 25px auto;
+}
+
+p {
+	/* <link rel="stylesheet" href="https://use.typekit.net/fyj0lqc.css">*/
+	font-family: 'alda', serif;
+	font-size: 1.4em;
+    line-height: 1.6;
+	font-weight: 400px;
+	font-style: normal;
+    color: rgb(255, 238, 131); /* ---------- End of color change */
+}
+nav{
+	/* <link rel="stylesheet" href="https://use.typekit.net/fyj0lqc.css">*/
+	font-family: 'alda', serif;
+	font-size: 1.2em;
+	width: 80 px; 
+	margin:#fff 0 auto;
+	border: 0px;
+	font-style: italic;
+	border-width: 3 px 0;
+	text-align: center;
+	margin-top: 2em;
+}
+
+nav li{
+	display: inline;
+}
+
+nav a{
+	display: inline-flex; /* Changed display to inline-flex */
+	padding: 10 px;
+}
+
+a{
+	color: rgb(255, 255, 255);
+	text-decoration: honeydew;
+	font-weight: bold;
+}
+/* Added grow effect when hovering */
+a:hover{
+	-webkit-transform: scale(1.3); 
+	-ms-transform: scale(1.3);
+	transform: scale(1.3);
+	background:rgb(249, 160, 160)
+}
